@@ -1,11 +1,29 @@
 apiVersion: v1
 entries:
+  opendistro-es:
+  - apiVersion: v1
+    appVersion: 1.9.0
+    created: "2020-09-03T15:33:11.605349316Z"
+    description: Open Distro for Elasticsearch
+    digest: 8eee29b291695d1af5e26fc31e6c5a39e76f3a4c68c58a603428622bd169fc4d
+    kubeVersion: ^1.10.0-0
+    maintainers:
+    - email: derek.heldt-werle@viasat.com
+      name: Derek Heldt-Werle
+    - email: kalvin.chau@viasat.com
+      name: Kalvin Chau
+    name: opendistro-es
+    sources:
+    - https://pages.git.viasat.com/ATG/charts
+    urls:
+    - opendistro-es-1.9.0.tgz
+    version: 1.9.0
   wordpress:
   - annotations:
       category: CMS
     apiVersion: v1
     appVersion: 5.5.1
-    created: "2020-09-03T15:54:06.184846+05:30"
+    created: "2020-09-03T15:33:11.61145327Z"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -14,7 +32,7 @@ entries:
       - wordpress-database
       version: 7.x.x
     description: My local wordpress instance and pushed in my local repo.
-    digest: aedea32474ce4f0645a1c812117370a530b4c4be0076b718ca6551ed3094df61
+    digest: 7426dcf023455872a199ecd4d11a342d9278503bdef39c3a01f2f8711420a98f
     home: http://www.wordpress.com/
     icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
     keywords:
@@ -34,4 +52,4 @@ entries:
     urls:
     - wordpress-9.5.3.tgz
     version: 9.5.3
-generated: "2020-09-03T15:54:06.180639+05:30"
+generated: "2020-09-03T15:33:11.602600971Z"
