@@ -85,6 +85,9 @@ samarthya/wordpress	9.5.3        	5.5.1      	My local wordpress instance and pu
 
 ```
 helm install mwp samarthya/wordpress
+```
+
+```
 NAME: mwp
 LAST DEPLOYED: Thu Sep  3 16:05:44 2020
 NAMESPACE: default
@@ -115,6 +118,14 @@ To access your WordPress site from outside the cluster follow the steps below:
   echo Username: user
   echo Password: $(kubectl get secret --namespace default mwp-wordpress -o jsonpath="{.data.wordpress-password}" | base64 --decode)
 ```
+
+
+```
+helm ls
+NAME	NAMESPACE	REVISION	UPDATED                             	STATUS  	CHART          	APP VERSION
+mwp 	default  	1       	2020-09-03 16:33:04.713188 +0530 IST	deployed	wordpress-9.5.3	5.5.1 
+```
+
 
 - You should create a localdisk `pv` and use the `storageClass` appropriately.
 - The PV, PVC and StorageClasses
