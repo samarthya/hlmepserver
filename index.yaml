@@ -2,9 +2,10 @@ apiVersion: v1
 entries:
   epserver:
   - apiVersion: v2
-    created: "2020-09-14T17:40:44.127432+05:30"
+    appVersion: 2.0.0
+    created: "2020-09-14T17:49:54.956825+05:30"
     description: A sample go server that exposes few endpoints.
-    digest: 5676b4722e893e4fa5820cb67a01a6c4904c718e175a5816e10e50ca0c7f6778
+    digest: 0a810081db1db75ea09c74e5aaaef3a50092b818acc5b51d26393c50e483b387
     kubeVersion: ~1.16.6-beta.0
     name: epserver
     type: application
@@ -14,7 +15,7 @@ entries:
   opendistro-es:
   - apiVersion: v1
     appVersion: 1.9.0
-    created: "2020-09-14T17:40:44.129857+05:30"
+    created: "2020-09-14T17:49:54.960501+05:30"
     description: Open Distro for Elasticsearch
     digest: 8eee29b291695d1af5e26fc31e6c5a39e76f3a4c68c58a603428622bd169fc4d
     kubeVersion: ^1.10.0-0
@@ -34,7 +35,7 @@ entries:
       category: CMS
     apiVersion: v1
     appVersion: 5.5.1
-    created: "2020-09-14T17:40:44.134261+05:30"
+    created: "2020-09-14T17:49:54.965425+05:30"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -63,4 +64,4 @@ entries:
     urls:
     - wordpress-9.5.3.tgz
     version: 9.5.3
-generated: "2020-09-14T17:40:44.125254+05:30"
+generated: "2020-09-14T17:49:54.955913+05:30"
